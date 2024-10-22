@@ -103,6 +103,122 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  height: 10%;
+  width: 14%;
+  top: 19%;
+  left: 22%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #55555500;
+  color: rgba(255, 255, 255, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn2 {
+  position: absolute;
+  height: 10%;
+  width: 14%;
+  top: 19%;
+  left: 7%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #f0070700;
+  color: rgba(255, 255, 255, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn3 {
+  position: absolute;
+  height: 5%;
+  width: 3%;
+  top: 62%;
+  left: 22%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #cf111100;
+  color: rgba(63, 0, 0, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn4 {
+  position: absolute;
+  height: 5%;
+  width: 3%;
+  top: 62%;
+  left: 76%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #cf111100;
+  color: rgba(63, 0, 0, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn5 {
+  position: absolute;
+  height: 5%;
+  width: 1%;
+  top: 62%;
+  left: 90%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #cf111100;
+  color: rgba(63, 0, 0, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn6 {
+  position: absolute;
+  height: 5%;
+  width: 1%;
+  top: 62%;
+  left: 7%;
+  transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  background-color: #cf111100;
+  color: rgba(63, 0, 0, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -153,7 +269,33 @@ img {vertical-align: middle;}
     </div>
 
     <div>
-      <img class="lower-part" src="./images/lower.jpg" alt="lower">
+      <img class="lower-part" src="./images/lower1.jpg" alt="lower">
+    </div>
+
+    <div class="container">
+      <img class="lower-part" src="./images/lower2.jpg" alt="lower" id="pic1">
+      <button class="btn" onclick="myfun ()"> </button>
+      <button class="btn2" onclick="myfun2 ()"> </button>
+    </div>
+
+    <div>
+      <img class="lower-part" src="./images/lower3.jpg" alt="lower">
+    </div>
+
+    <div class="container">
+      <img class="lower-part" src="./images/lower4.jpg" alt="lower" id="pic2">
+      <button class="btn3" onclick="myfun3 ()"> </button>
+      <button class="btn5" onclick="myfun3 ()"> </button>
+      <button class="btn4" onclick="myfun4 ()"> </button>
+      <button class="btn6" onclick="myfun4 ()"> </button>
+    </div>
+
+    <div>
+      <img class="lower-part" src="./images/lower5.jpg" alt="lower">
+    </div>
+
+    <div>
+      <img class="lower-part" src="./images/footer.jpg" alt="lower">
     </div>
     <br>
     
@@ -185,6 +327,30 @@ img {vertical-align: middle;}
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
+    }
+
+    function myfun ()
+    {
+      document.getElementById("pic1").src="./images/lower2-a.jpg"
+
+    }
+
+    function myfun2 ()
+    {
+      document.getElementById("pic1").src="./images/lower2.jpg"
+
+    }
+
+    function myfun3 ()
+    {
+      document.getElementById("pic2").src="./images/lower4-a.jpg"
+
+    }
+
+    function myfun4 ()
+    {
+      document.getElementById("pic2").src="./images/lower4.jpg"
+
     }
     </script>
 </body>
